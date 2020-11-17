@@ -61,7 +61,7 @@ export default {
 		},
 		login(){
 			this.$refs.loginFormRef.validate(async valid=>{
-				// valid：bool类型
+				// valid是bool类型
 				if(!valid) return;
 				// this.$http.post('login', this.loginForm): 返回值为promise
         		// 返回值为promise，可加await简化操作 相应的也要加async

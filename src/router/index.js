@@ -2,11 +2,10 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Login from '../components/login'
 import Home from '../components/home'
-// 导入全局样式表
+// 导入全局样式表  
 import '../assets/css/global.css'
 Vue.use(Router)
 
-//export default 
 const router = new Router({
   routes: [
     {path:'/',redirect:'/login'},//路由重定向

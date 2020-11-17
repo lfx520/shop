@@ -1,6 +1,5 @@
 <template>
 	<div>
-		home 组件
 		<el-button type="info" @click="logout">退出</el-button>
 	</div>
 </template>

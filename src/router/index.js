@@ -2,6 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Login from '../components/login'
 import Home from '../components/home'
+import Welcome from '../components/welcome'
+import Users from '../components/user/users'
 // 导入全局样式表  
 import '../assets/css/global.css'
 Vue.use(Router)
@@ -17,7 +19,21 @@ const router = new Router({
     {
       path: '/home',
       name: 'home',
-      component: Home
+      component: Home,
+      redirect:'/welcome',//重定向到welcome
+      children:[
+        {
+          path: '/welcome',
+          name: 'welcome',
+          component: Welcome,
+        },
+        {
+          path:'/users',
+          name:'users',
+          component:Users
+        }
+
+      ]
     }
   ]
 })

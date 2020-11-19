@@ -3,7 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-<<<<<<< HEAD
+
 import axios from 'axios'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
@@ -12,12 +12,10 @@ Vue.config.productionTip = false
 Vue.use(ElementUI);
 Vue.prototype.$http = axios;
 
-=======
 //import less from 'less'
-
 //导入element
-import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css'
+// import ElementUI from 'element-ui'
+// import 'element-ui/lib/theme-chalk/index.css'
 //单独导入message
 import { Message } from 'element-ui'
 //单独导入MessageBox 
@@ -29,7 +27,7 @@ import './assets/fonts/iconfont.css'
 import NProgress from 'nprogress'
 //import 'nprogress/nprogress.css'
 
-import axios from 'axios'
+// import axios from 'axios'
 // 配置请求根路径
 axios.defaults.baseURL = 'http://127.0.0.1:8888/api/private/v1/'
 
@@ -58,7 +56,6 @@ Vue.use(ElementUI)
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm
 //Vue.use(less)
->>>>>>> user
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

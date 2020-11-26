@@ -7,10 +7,17 @@ import router from './router'
 import axios from 'axios'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+// 导入表格树
+//import TreeTable from 'vue-table-with-tree-grid'
+import TreeTable from 'vue-table-with-tree-grid'
+
+//Vue.use(ZkTable)
+Vue.component('tree-table',TreeTable)
 
 Vue.config.productionTip = false
 Vue.use(ElementUI);
 Vue.prototype.$http = axios;
+//Vue.component('zk-table', TreeTable)
 
 //import less from 'less'
 //导入element

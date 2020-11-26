@@ -266,8 +266,8 @@
 				},
 				//根据id删除对应的角色信息
 				async removeRolesById(id){
-					console.log(id)
-					const confirmResult = await this.$confirm('此操作将永久删除该文件, 是否继续?', '提示', {
+					//console.log(id)
+					const confirmResult = await this.$confirm('此操作将永久删除该角色, 是否继续?', '提示', {
 
          				confirmButtonText: '确定',
 				        cancelButtonText: '取消',

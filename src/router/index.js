@@ -6,6 +6,7 @@ import Welcome from '../components/welcome'
 import Users from '../components/user/users'
 import Rights from '../components/power/rights'
 import Roles from '../components/power/roles'
+import Cate from '../components/goods/cate'
 // 导入全局样式表  
 import '../assets/css/global.css'
 
@@ -23,6 +24,7 @@ export default new Router({
       { path: '/users', component: Users },
       { path: '/rights', component: Rights },
       { path: '/roles', component: Roles },
+      { path:'/categories',component:Cate}
       
     ] }
   ]

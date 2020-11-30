@@ -327,7 +327,7 @@
         		}).catch(err =>  err)//捕获错误，返回一个错误return err
         		//如果用户确认删除，则返回字符串 confirm
 
-        		//如果用户确认删除，则返回字符串cancel
+        		//如果用户不确认删除，则返回字符串cancel
         		//console.log(confirmResult)
         		if(confirmResult !== 'confirm'){
         			return this.$message.info('已取消删除')

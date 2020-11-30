@@ -20,6 +20,8 @@ import 'quill/dist/quill.bubble.css' // for bubble theme
 
 
 
+
+
 //Vue.use(ZkTable)
 Vue.component('tree-table',TreeTable)
 
@@ -28,6 +30,7 @@ Vue.use(ElementUI);
 Vue.prototype.$http = axios;
 //全局注册，将富文本编辑器注册为全局可用的组件
 Vue.use(VueQuillEditor)
+
 
 //定义全局过滤器
 Vue.filter('dateFormat',function(originVal){

@@ -11,6 +11,8 @@ import Params from '../components/goods/params'
 import List from '../components/goods/list'
 import Add from '../components/goods/add'
 import Order from '../components/order/order'
+import Report from '../components/report/report'
+
 // 导入全局样式表  
 import '../assets/css/global.css'
 
@@ -32,7 +34,8 @@ export default new Router({
       { path:'/params',component:Params},
       { path:'/goods',component:List},
       { path:'/goods/add',component:Add},
-      { path:'/orders',component:Order}
+      { path:'/orders',component:Order},
+      { path:'/reports',component:Report}
       
     ] }
   ]

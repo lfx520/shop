@@ -8,6 +8,8 @@ import Rights from '../components/power/rights'
 import Roles from '../components/power/roles'
 import Cate from '../components/goods/cate'
 import Params from '../components/goods/params'
+import List from '../components/goods/list'
+import Add from '../components/goods/add'
 // 导入全局样式表  
 import '../assets/css/global.css'
 
@@ -26,7 +28,9 @@ export default new Router({
       { path: '/rights', component: Rights },
       { path: '/roles', component: Roles },
       { path:'/categories',component:Cate},
-      { path:'/params',component:Params}
+      { path:'/params',component:Params},
+      { path:'/goods',component:List},
+      { path:'/goods/add',component:Add}
       
     ] }
   ]
